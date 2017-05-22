@@ -13,11 +13,12 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava && tsc -p test/ts-types"
   },
   "files": [
     "index.js"
   ],
+  "types": "index.d.ts",
   "keywords": [
     "time",
     "span",
@@ -43,6 +44,7 @@
     "ava": "*",
     "delay": "^1.1.0",
     "in-range": "^1.0.0",
+    "typescript": "^2.3.3",
     "xo": "*"
   }
 }
