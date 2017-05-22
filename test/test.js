@@ -1,7 +1,7 @@
 import test from 'ava';
 import delay from 'delay';
 import inRange from 'in-range';
-import fn from './';
+import fn from '../';
 
 global.Promise = Promise;
 
