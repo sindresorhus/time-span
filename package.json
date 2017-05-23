@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -37,11 +37,11 @@
     "nanoseconds"
   ],
   "dependencies": {
-    "convert-hrtime": "^1.0.0"
+    "convert-hrtime": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "delay": "^1.1.0",
+    "delay": "^2.0.0",
     "in-range": "^1.0.0",
     "xo": "*"
   }
