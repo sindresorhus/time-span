@@ -24,7 +24,7 @@ console.log(end());
 console.log(end.rounded());
 //=> 1745
 
-console.log(end.sec());
+console.log(end.seconds());
 //=> 1.7453186
 ```
 
