@@ -1,7 +1,8 @@
 'use strict';
+
 const convertHrtime = require('convert-hrtime');
 
-module.exports = () => {
+const timeSpan = () => {
 	const start = process.hrtime();
 	const end = type => convertHrtime(process.hrtime(start))[type];
 
@@ -12,3 +13,6 @@ module.exports = () => {
 
 	return ret;
 };
+
+module.exports = timeSpan;
+module.exports.default = timeSpan;

@@ -1,48 +1,50 @@
 {
-  "name": "time-span",
-  "version": "2.0.0",
-  "description": "Simplified high resolution timing",
-  "license": "MIT",
-  "repository": "sindresorhus/time-span",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "time",
-    "span",
-    "elapsed",
-    "process",
-    "hrtime",
-    "highres",
-    "timing",
-    "perf",
-    "performance",
-    "bench",
-    "benchmark",
-    "profiling",
-    "measure",
-    "seconds",
-    "milliseconds",
-    "nanoseconds"
-  ],
-  "dependencies": {
-    "convert-hrtime": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "delay": "^2.0.0",
-    "in-range": "^1.0.0",
-    "xo": "*"
-  }
+	"name": "time-span",
+	"version": "2.0.0",
+	"description": "Simplified high resolution timing",
+	"license": "MIT",
+	"repository": "sindresorhus/time-span",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd-check"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"time",
+		"span",
+		"elapsed",
+		"process",
+		"hrtime",
+		"highres",
+		"timing",
+		"perf",
+		"performance",
+		"bench",
+		"benchmark",
+		"profiling",
+		"measure",
+		"seconds",
+		"milliseconds",
+		"nanoseconds"
+	],
+	"dependencies": {
+		"convert-hrtime": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.3.1",
+		"delay": "^4.1.0",
+		"in-range": "^1.0.0",
+		"tsd-check": "^0.3.0",
+		"xo": "^0.24.0"
+	}
 }

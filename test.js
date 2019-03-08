@@ -1,10 +1,10 @@
 import test from 'ava';
 import delay from 'delay';
 import inRange from 'in-range';
-import m from '.';
+import timeSpan from '.';
 
-test(async t => {
-	const end = m();
+test('timeEnd', async t => {
+	const end = timeSpan();
 	await delay(100);
 	t.true(inRange(end(), 80, 120));
 	t.true(inRange(end.rounded(), 80, 120));
