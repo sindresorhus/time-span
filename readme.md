@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save time-span
+$ npm install time-span
 ```
 
 
@@ -14,6 +14,7 @@ $ npm install --save time-span
 
 ```js
 const timeSpan = require('time-span');
+
 const end = timeSpan();
 
 timeConsumingFn();
@@ -31,9 +32,9 @@ console.log(end.seconds());
 
 ## API
 
-### timeSpan()
+### `const end = timeSpan()`
 
-Returns a function that returns the time difference:
+Returns a function, that when called, returns the time difference.
 
 #### end()
 
