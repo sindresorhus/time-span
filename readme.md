@@ -37,19 +37,19 @@ Returns a function that returns the time difference:
 
 #### end()
 
-Milliseconds.
+Elapsed milliseconds.
 
 #### end.rounded()
 
-Milliseconds rounded.
+Elapsed milliseconds rounded.
 
 #### end.seconds()
 
-Seconds.
+Elapsed seconds.
 
 #### end.nanoseconds()
 
-Nanoseconds.
+Elapsed nanoseconds.
 
 
 ## License
