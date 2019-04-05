@@ -1,5 +1,5 @@
-import {expectType} from 'tsd-check';
-import timeSpan from '.';
+import {expectType} from 'tsd';
+import timeSpan = require('.');
 
 const end = timeSpan();
 

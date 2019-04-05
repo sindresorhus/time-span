@@ -14,4 +14,5 @@ const timeSpan = () => {
 };
 
 module.exports = timeSpan;
+// TODO: Remove this for the next major release
 module.exports.default = timeSpan;
