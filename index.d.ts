@@ -22,36 +22,29 @@ declare namespace timeSpan {
 	}
 }
 
-declare const timeSpan: {
-	/**
-	Simplified high resolution timing.
+/**
+Simplified high resolution timing.
 
-	@returns A function that returns the time difference.
+@returns A function that returns the time difference.
 
-	@example
-	```
-	import timeSpan = require('time-span');
+@example
+```
+import timeSpan = require('time-span');
 
-	const end = timeSpan();
+const end = timeSpan();
 
-	timeConsumingFn();
+timeConsumingFn();
 
-	console.log(end());
-	//=> 1745.3186
+console.log(end());
+//=> 1745.3186
 
-	console.log(end.rounded());
-	//=> 1745
+console.log(end.rounded());
+//=> 1745
 
-	console.log(end.seconds());
-	//=> 1.7453186
-	```
-	*/
-	(): timeSpan.TimeEndFunction;
-
-	// TODO: Remove this for the next major release, refactor the whole definition to:
-	// declare function timeSpan(): timeSpan.TimeEndFunction;
-	// export = timeSpan;
-	default: typeof timeSpan;
-};
+console.log(end.seconds());
+//=> 1.7453186
+```
+*/
+declare function timeSpan(): timeSpan.TimeEndFunction;
 
 export = timeSpan;

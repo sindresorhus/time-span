@@ -4,13 +4,14 @@
 	"description": "Simplified high resolution timing",
 	"license": "MIT",
 	"repository": "sindresorhus/time-span",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -38,13 +39,13 @@
 		"nanoseconds"
 	],
 	"dependencies": {
-		"convert-hrtime": "^2.0.0"
+		"convert-hrtime": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",
 		"delay": "^4.1.0",
-		"in-range": "^1.0.0",
-		"tsd": "^0.7.2",
+		"in-range": "^2.0.0",
+		"tsd": "^0.11.0",
 		"xo": "^0.24.0"
 	}
 }

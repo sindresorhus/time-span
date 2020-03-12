@@ -2,13 +2,11 @@
 
 > Simplified high resolution timing
 
-
 ## Install
 
 ```
 $ npm install time-span
 ```
-
 
 ## Usage
 
@@ -28,7 +26,6 @@ console.log(end.rounded());
 console.log(end.seconds());
 //=> 1.7453186
 ```
-
 
 ## API
 
@@ -51,8 +48,3 @@ Elapsed seconds.
 #### end.nanoseconds()
 
 Elapsed nanoseconds.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
