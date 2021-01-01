@@ -1,4 +1,4 @@
-# time-span [![Build Status](https://travis-ci.org/sindresorhus/time-span.svg?branch=master)](https://travis-ci.org/sindresorhus/time-span)
+# time-span
 
 > Simplified high resolution timing
 
