@@ -1,25 +1,23 @@
-declare namespace timeSpan {
-	interface TimeEndFunction {
-		/**
-		@returns Elapsed milliseconds.
-		*/
-		(): number;
+export interface TimeEndFunction {
+	/**
+	@returns Elapsed milliseconds.
+	*/
+	(): number;
 
-		/**
-		@returns Elapsed milliseconds rounded.
-		*/
-		rounded(): number;
+	/**
+	@returns Elapsed milliseconds rounded.
+	*/
+	rounded(): number;
 
-		/**
-		@returns Elapsed seconds.
-		*/
-		seconds(): number;
+	/**
+	@returns Elapsed seconds.
+	*/
+	seconds(): number;
 
-		/**
-		@returns Elapsed nanoseconds.
-		*/
-		nanoseconds(): number;
-	}
+	/**
+	@returns Elapsed nanoseconds.
+	*/
+	nanoseconds(): bigint;
 }
 
 /**
@@ -29,7 +27,7 @@ Simplified high resolution timing.
 
 @example
 ```
-import timeSpan = require('time-span');
+import timeSpan from 'time-span';
 
 const end = timeSpan();
 
@@ -45,6 +43,4 @@ console.log(end.seconds());
 //=> 1.7453186
 ```
 */
-declare function timeSpan(): timeSpan.TimeEndFunction;
-
-export = timeSpan;
+export default function timeSpan(): TimeEndFunction;

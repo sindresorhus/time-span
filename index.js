@@ -1,9 +1,8 @@
-'use strict';
-const convertHrtime = require('convert-hrtime');
+import convertHrtime from 'convert-hrtime';
 
-module.exports = () => {
-	const start = process.hrtime();
-	const end = type => convertHrtime(process.hrtime(start))[type];
+export default function timeSpan() {
+	const start = process.hrtime.bigint();
+	const end = type => convertHrtime(process.hrtime.bigint() - start)[type];
 
 	const returnValue = () => end('milliseconds');
 	returnValue.rounded = () => Math.round(end('milliseconds'));
@@ -11,4 +10,4 @@ module.exports = () => {
 	returnValue.nanoseconds = () => end('nanoseconds');
 
 	return returnValue;
-};
+}

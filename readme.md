@@ -11,7 +11,7 @@ $ npm install time-span
 ## Usage
 
 ```js
-const timeSpan = require('time-span');
+import timeSpan from 'time-span';
 
 const end = timeSpan();
 
