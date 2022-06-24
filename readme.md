@@ -2,6 +2,8 @@
 
 > Simplified high resolution timing
 
+Uses [`process.hrtime`](https://nodejs.org/api/process.html#processhrtimebigint) in Node.js and [`performance.now`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) in the Browser ([accurate to 5 microseconds](https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp)).
+
 ## Install
 
 ```
