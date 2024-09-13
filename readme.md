@@ -6,8 +6,8 @@ Uses [`process.hrtime`](https://nodejs.org/api/process.html#processhrtimebigint)
 
 ## Install
 
-```
-$ npm install time-span
+```sh
+npm install time-span
 ```
 
 ## Usage
